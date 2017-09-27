@@ -1,65 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Text Tag</title>
-	<meta charset="utf-8">
-	<style>
-	body{
-		margin:40px;
-	}
-	.wrapper{
-		display: grid;
-		grid-gap: 10px;
-		grid-template-columns: 200px 200px;
-	}
-		.box{
-			padding: 20px;
-		}
-		.a{
-			grid-column: 1;
-			grid-row: 1;
-		}
-		.b{
-			grid-column: 1;
-			grid-row: 2;
-		}
-		.c{
-			grid-column: 1;
-			grid-row: 3;
-		}
-		#in{
-			width: 700px;
-			height:300px;
-		}
-		#out{
-			width: 700px;
-			height: 300px;
-		}
-	</style>
+  <title>Text Tag</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="TextTag.css">
 </head>
 <body>
-	<h1>Before clicking submit the final time, make sure to re-enter all the numbers and names that have been cleared.</h1>
+
 <main>
-	<div class="wrapper">
-		<div class="box a" id=dataInfo>
-			<label for="headers">Number of header rows</label>
-			<input type="text" name="# of header rows" id="headers">
-			<button name="submit" onclick="makeHeaderInput(document.getElementById('headers').value)">Submit</button>
-			<table id="data_names">
-				<tr id="row">
-				<!--script takes over here-->
-			</tr>
-			</table>
-			
-		</div>
-		<div class="box b" id="rawText">
-			<textarea name="input area" id="in" placeholder="Place your input here"></textarea>
-		</div>
-		<div class="box c" id="puttingOut">
-			<textarea name="output area" placeholder="Your output will appear here" id="out"></textarea>
-		</div>
-	</div>
+
+  <div class="box a" id=dataInfo>
+    <label for="headers">Number of header rows</label>
+    <input type="text" name="# of header rows" id="headers">
+    <button name="submit">Submit</button>
+    <table id="data_names">
+      <tr id="row">
+      <!--script takes over here-->
+      </tr>
+    </table>
+  </div>
+
+  <div class="box b" id="rawText">
+    <textarea name="input area" id="in" placeholder="Place your input here"></textarea>
+  </div>
+
+  <div class="box c" id="puttingOut">
+    <textarea name="output area" placeholder="Your output will appear here" id="out"></textarea>
+  </div>
 </main>
+
 <script type="text/javascript" src="TextTag.js"></script>
 </body>
 </html>

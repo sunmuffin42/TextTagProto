@@ -1,0 +1,38 @@
+body {
+  margin:40px;
+}
+
+main {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 200px 200px;
+}
+
+.box {
+  padding: 20px;
+}
+
+.a {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.b {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.c {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#in {
+  width: 700px;
+  height:300px;
+}
+
+#out {
+  width: 700px;
+  height: 300px;
+}
