@@ -2,7 +2,7 @@ body {
   margin:40px;
 }
 
-.wrapper {
+main {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 200px 200px;

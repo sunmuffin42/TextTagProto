@@ -83,3 +83,13 @@ function annotateText(){
     b = b + 1
   }
 }
+
+let submitNumberHeadersButton = document.querySelector('button[name="submit"]')
+let headersInput = document.querySelector('input#headers')
+
+submitNumberHeadersButton.addEventListener('click', clickEvent => {
+   let numberOfHeaders = parseInt(headersInput.value)
+   makeHeaderInput(numberOfHeaders)
+})
+
+

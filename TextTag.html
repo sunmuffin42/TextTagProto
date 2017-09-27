@@ -6,27 +6,29 @@
   <link rel="stylesheet" href="TextTag.css">
 </head>
 <body>
+
 <main>
-  <div class="wrapper">
-    <div class="box a" id=dataInfo>
-      <label for="headers">Number of header rows</label>
-      <input type="text" name="# of header rows" id="headers">
-      <button name="submit" onclick="makeHeaderInput(document.getElementById('headers').value)">Submit</button>
-      <table id="data_names">
-        <tr id="row">
-        <!--script takes over here-->
+
+  <div class="box a" id=dataInfo>
+    <label for="headers">Number of header rows</label>
+    <input type="text" name="# of header rows" id="headers">
+    <button name="submit">Submit</button>
+    <table id="data_names">
+      <tr id="row">
+      <!--script takes over here-->
       </tr>
-      </table>
-      
-    </div>
-    <div class="box b" id="rawText">
-      <textarea name="input area" id="in" placeholder="Place your input here"></textarea>
-    </div>
-    <div class="box c" id="puttingOut">
-      <textarea name="output area" placeholder="Your output will appear here" id="out"></textarea>
-    </div>
+    </table>
+  </div>
+
+  <div class="box b" id="rawText">
+    <textarea name="input area" id="in" placeholder="Place your input here"></textarea>
+  </div>
+
+  <div class="box c" id="puttingOut">
+    <textarea name="output area" placeholder="Your output will appear here" id="out"></textarea>
   </div>
 </main>
+
 <script type="text/javascript" src="TextTag.js"></script>
 </body>
 </html>
